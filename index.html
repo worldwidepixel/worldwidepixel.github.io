@@ -98,6 +98,7 @@
       body {
         margin: 0;
         font-size: 17px;
+        overflow: hidden;
       }
 
       .video {
@@ -109,7 +110,9 @@
         bottom: 0;
         right: 0;
         filter: brightness(70%);
-
+		filter: blur(10px);
+		transform: scale(1.04);
+		object-fit: cover;
 
       }
 
