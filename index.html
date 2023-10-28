@@ -5,6 +5,7 @@
     <title>worldwidepixel - hello</title>
     <link rel="icon" type="image/x-icon" href="icon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/cascadia-code@4.2.1/index.min.css" rel="stylesheet">
 <!--    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Century%20Gothic%3Ai%2Cbi%2C700%2C400&display=swap" rel="stylesheet">
@@ -38,7 +39,134 @@
   src: url(./fonts/gothic-webfont.woff2) format("woff2");
   font-weight: bold;
   } */
-    @media (max-width: 1400px) {
+
+  @media (max-width: 560px) {
+
+    .iconlinks {
+      font-size: 30px !important;
+    }
+
+    .mainsubtitle {
+      font-size: 30px !important;
+    }
+
+    .maintitle {
+      font-size: 50px !important;
+    }
+
+    .links {
+      font-size: 25px !important;
+      margin-top: 20px !important;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f2f2f2;
+      border-radius: 6px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 6px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 90px;
+      background-image: url("bannertransparent.png");
+      color: black;
+      text-align: center;
+      background-size: cover;
+      box-shadow: 50px 50px 50px 50px #b0b0b0;
+    }
+
+    .page {
+      margin: auto;
+      width: 80%;
+    }
+
+    .text {
+      font-family: "Source Serif Pro";
+      font-size: 30;
+    }
+
+    .title {
+      font-family: "Century Gothic";
+      letter-spacing: -3;
+      font-weight: 600;
+      font-size: 70;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-size: 17px;
+      overflow: hidden;
+    }
+
+    .video {
+      height: 100vh;
+      width: 100vw;
+      object-fit: cover;
+      overflow: hidden;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      filter: brightness(70%);
+  filter: blur(1.5vh);
+  transform: scale(1.04);
+  object-fit: cover;
+
+    }
+
+    .content {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      text-size-adjust: none;
+      -webkit-text-size-adjust: none;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+
+    a {
+      color: white;
+    }
+
+    .infobox, h2 {
+      visibility: hidden;
+    }
+
+  }
+
+
+    @media (max-width: 1400px) and (min-width:560px) {
 
       /* width */
       ::-webkit-scrollbar {
@@ -270,6 +398,7 @@
 
     .socials {
       text-decoration: none;
+      margin-top:20px;
     }
 
 
@@ -327,11 +456,11 @@
 
     <div style="padding-top: 10%;" class="content">
       <div style="font-size: 50px; font-weight: 700;">
-        <p style="letter-spacing: -3;font-family: 'century_gothicbold';font-size: 70px;text-align: center;margin-top: -150;">worldwidepixel</p>
-        <p style="font-family: 'century_gothicregular';letter-spacing: -1;font-weight: 500;font-size: 35px;text-align: center;margin-top: -50;">I make things. On the internet.</p>
-        <p style="font-family: 'century_gothicbold';letter-spacing: -;color: white;font-size: 50px;text-align: center;margin-top: 2;"><a href="https://youtube.com/@worldwidepixel">youtube</a> &#149; <a rel="me" href="https://mas.to/@worldwidepixel">mastodon</a></p>
-        <p style="font-family: 'century_gothicbold';color: white;font-size: 50px;text-align: center;margin-top: -60;"><a href="https://old.worldwidepixel.ca">old site</a> &#149; <a href="https://old.worldwidepixel.ca/pixelpack">pixelpack</p>
-        <p style="font-family: 'century_gothicbold';color: white;font-size: 50px;text-align: center;margin-top: -10;">
+        <p class="maintitle" style="letter-spacing: -3;font-family: 'century_gothicbold';font-size: 70px;text-align: center;margin-top: -150;">worldwidepixel</p>
+        <p class="mainsubtitle" style="font-family: 'cascadia code';letter-spacing: -1;font-weight: 500;font-size: 35px;text-align: center;margin-top: -50;">I make things. On the internet.</p>
+        <p class="links" style="font-family: 'cascadia code';letter-spacing: 1;color: white;font-size: 45px;text-align: center;margin-top: 2;"><a href="https://youtube.com/@worldwidepixel">youtube</a> &#149; <a rel="me" href="https://mas.to/@worldwidepixel">mastodon</a></p>
+        <p class="links" style="font-family: 'cascadia code';color: white;font-size: 45px;text-align: center;margin-top: -40;"><a href="https://old.worldwidepixel.ca">old site</a> &#149; <a href="https://old.worldwidepixel.ca/pixelpack">pixelpack</p>
+        <p class="iconlinks" style="font-family: 'cascadia code';color: white;font-size: 45px;text-align: center;margin-top: -10;">
           <a class="socials fa-brands fa-youtube" href="https://youtube.com/@worldwidepixel"></a> &#149;
           <a rel="me" class="socials fa-brands fa-mastodon" href="https://mastodon.social/@worldwidepixel"></a> &#149;
           <a class="socials fa-brands fa-twitch" href="https://twitch.tv/worldwidepixel"></a> &#149;
